@@ -1,0 +1,26 @@
+@media (max-width: 991px) {
+    /* Ensures the navbar-brand logo stays small on the bar */
+    .navbar-brand img {
+        width: 120px;
+        height: auto;
+        margin-top: -10px;
+        margin-bottom: -10px;
+        display: block;
+    }
+
+    /* Centers the menu items */
+    .navbar-collapse {
+        text-align: center;
+        padding-top: 15px;
+    }
+}
+
+/* --- Desktop Styles remain the same --- */
+@media (min-width: 992px) {
+    .main-logo {
+        width: 160px;
+        margin-top: -45px;
+        margin-bottom: -45px;
+        display: block;
+    }
+}
