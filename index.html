@@ -1,7 +1,9 @@
-<!doctype html>
+<!-- <!-- 1. Document Head & Metadata
+"Sa part na ito, minor lang ang differences pero mahalaga sa best practices." -->
+ <!doctype html> <!-- Doctype: Mas standard ang gamit kung <!DOCTYPE html> (all caps). -->
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8"> <!-- Charset: UTF-8 vs utf-8. Pareho lang silang gagana, pero mas malinis tingnan ang uppercase. -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
@@ -26,26 +28,18 @@
         <!-- Navigation Links -->
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
+                <li class="nav-item"> <a class="nav-link active" aria-current="page" href="#">Home</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#">Features</a> </li>
+            </ul> 
+          <!-- itong for set ng Navigation mo ay dapat naka separate ng Unordered List kasi bawal maglagay ng <a> tag o <img> tag nang direkta sa loob ng <ul>. Ang valid na anak lang ng <ul> ay <li>.-->
 
-        <!-- logo for mobile device view -->
-        <a class="navbar-brand mx-auto mx-lg-4 d-none d-lg-block" href="#">
-        <img src="assets/petsforeveryone-logo.png" alt="logo" class="main-logo">
-        </a>
+         <!-- logo for mobile device view -->
+            <a class="navbar-brand mx-auto mx-lg-4 d-none d-lg-block" href="#">  <!--Dapat nasa pagitan to ng Menu mo -->
+              <img src="assets/petsforeveryone-logo.png" alt="logo" class="main-logo"> <!--Baguhin mo yung sa src="assets/petsforeveryone-logo.png" kasi di naka separate folder yung gawa mo dito-->
+            </a>
 
-        <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
-        </li>
-
-        <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-        </li>
-
-        <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li>
+        <li class="nav-item"> <a class="nav-link" href="#">Pricing</a> </li>
+        <li class="nav-item"> <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a></li>
         
       </ul>
     </div>
